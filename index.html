@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alpha | Team Bio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="backdrop backdrop-one"></div>
+  <div class="backdrop backdrop-two"></div>
+
+  <header class="hero reveal">
+    <div class="hero__badge">Alpha Team</div>
+    <div class="hero__top">
+      <div class="logo" aria-label="Team logo">
+        <div class="logo__mark">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div>
+          <p class="eyebrow">Team Name</p>
+          <h1>Alpha</h1>
+        </div>
+      </div>
+
+      <nav class="hero__nav" aria-label="Primary">
+        <a href="#bios">Bios</a>
+        <a href="#mission">Mission</a>
+        <a href="#rules">Rules</a>
+        <a href="#contrib">Contributors</a>
+      </nav>
+    </div>
+
+    <div class="hero__content">
+      <div>
+        <p class="eyebrow">Identity as Computer Scientists</p>
+        <h2>We build thoughtful systems, collaborate openly, and turn curiosity into useful code.</h2>
+        <p class="hero__copy">
+          This page highlights our team’s background, values, and creative style. Replace the placeholders with your real team members, team name, and links before submission.
+        </p>
+      </div>
+
+      <div class="hero__panel">
+        <p class="panel__label">Snapshot</p>
+        <ul class="stats" id="stats">
+          <li><strong>4</strong><span>Team members</span></li>
+          <li><strong>1</strong><span>Shared mission</span></li>
+          <li><strong>∞</strong><span>Ideas to explore</span></li>
+        </ul>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="bios" class="section reveal">
+      <div class="section__heading">
+        <p class="eyebrow">Individual Bios</p>
+        <h2>Meet Alpha</h2>
+      </div>
+
+      <div class="bios-grid">
+        <article class="bio-card bio-card--ember member-card" data-member="ben">
+          <div class="bio-card__avatar-wrap">
+            <img class="bio-card__avatar-image" alt="Ben Dodson avatar preview" data-avatar-image hidden />
+            <div class="bio-card__avatar bio-card__avatar--fallback" data-avatar-fallback>BD</div>
+          </div>
+          <div class="bio-card__body">
+            <div class="bio-card__header-row">
+              <div>
+                <h3>Ben Dodson</h3>
+                <p class="bio-card__role">Backend problem solver</p>
+              </div>
+              <label class="avatar-upload" for="avatar-ben">Upload avatar</label>
+              <input class="visually-hidden" id="avatar-ben" data-avatar-input type="file" accept="image/*" />
+            </div>
+            <label class="field-label" for="description-ben">Write your description</label>
+            <textarea id="description-ben" data-description-input rows="5" maxlength="240">Ben is focused on building dependable features, keeping code organized, and helping the team move efficiently through each project milestone.</textarea>
+            <p class="field-hint">Share a short description of your strengths, interests, or role on the team.</p>
+            <div class="moodboard">
+              <span class="mood-item mood-item--image">{ }</span>
+              <a class="mood-item" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="mood-item" href="https://developer.mozilla.org/" target="_blank" rel="noreferrer">MDN</a>
+              <span class="mood-item mood-item--note">APIs</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bio-card bio-card--ocean member-card" data-member="allan">
+          <div class="bio-card__avatar-wrap">
+            <img class="bio-card__avatar-image" alt="Allan Thavithith avatar preview" data-avatar-image hidden />
+            <div class="bio-card__avatar bio-card__avatar--fallback" data-avatar-fallback>AT</div>
+          </div>
+          <div class="bio-card__body">
+            <div class="bio-card__header-row">
+              <div>
+                <h3>Allan Thavithith</h3>
+                <p class="bio-card__role">UI and accessibility builder</p>
+              </div>
+              <label class="avatar-upload" for="avatar-allan">Upload avatar</label>
+              <input class="visually-hidden" id="avatar-allan" data-avatar-input type="file" accept="image/*" />
+            </div>
+            <label class="field-label" for="description-allan">Write your description</label>
+            <textarea id="description-allan" data-description-input rows="5" maxlength="240">Allan cares about clean presentation, smooth usability, and making sure the page feels polished on every screen size.</textarea>
+            <p class="field-hint">Keep it personal and concise so each member can speak in their own voice.</p>
+            <div class="moodboard">
+              <span class="mood-item mood-item--image">Aa</span>
+              <a class="mood-item" href="https://web.dev/" target="_blank" rel="noreferrer">web.dev</a>
+              <a class="mood-item" href="https://coolors.co/" target="_blank" rel="noreferrer">Color tools</a>
+              <span class="mood-item mood-item--note">A11y</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bio-card bio-card--sun member-card" data-member="nimay">
+          <div class="bio-card__avatar-wrap">
+            <img class="bio-card__avatar-image" alt="Nimay Satishkumar avatar preview" data-avatar-image hidden />
+            <div class="bio-card__avatar bio-card__avatar--fallback" data-avatar-fallback>NS</div>
+          </div>
+          <div class="bio-card__body">
+            <div class="bio-card__header-row">
+              <div>
+                <h3>Nimay Satishkumar</h3>
+                <p class="bio-card__role">Systems and algorithms thinker</p>
+              </div>
+              <label class="avatar-upload" for="avatar-nimay">Upload avatar</label>
+              <input class="visually-hidden" id="avatar-nimay" data-avatar-input type="file" accept="image/*" />
+            </div>
+            <label class="field-label" for="description-nimay">Write your description</label>
+            <textarea id="description-nimay" data-description-input rows="5" maxlength="240">Nimay enjoys turning complex logic into simple behavior, especially when performance and clarity both matter.</textarea>
+            <p class="field-hint">Mention what you contribute to the team and what you like building.</p>
+            <div class="moodboard">
+              <span class="mood-item mood-item--image">01</span>
+              <a class="mood-item" href="https://docs.python.org/3/" target="_blank" rel="noreferrer">Docs</a>
+              <a class="mood-item" href="https://stackoverflow.com/" target="_blank" rel="noreferrer">Stack Overflow</a>
+              <span class="mood-item mood-item--note">Logic</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bio-card bio-card--ember member-card" data-member="mike">
+          <div class="bio-card__avatar-wrap">
+            <img class="bio-card__avatar-image" alt="Mike Mallare avatar preview" data-avatar-image hidden />
+            <div class="bio-card__avatar bio-card__avatar--fallback" data-avatar-fallback>MM</div>
+          </div>
+          <div class="bio-card__body">
+            <div class="bio-card__header-row">
+              <div>
+                <h3>Mike Mallare</h3>
+                <p class="bio-card__role">Team collaborator and builder</p>
+              </div>
+              <label class="avatar-upload" for="avatar-mike">Upload avatar</label>
+              <input class="visually-hidden" id="avatar-mike" data-avatar-input type="file" accept="image/*" />
+            </div>
+            <label class="field-label" for="description-mike">Write your description</label>
+            <textarea id="description-mike" data-description-input rows="5" maxlength="240">Mike brings steady collaboration, practical problem solving, and attention to detail when turning ideas into a finished page.</textarea>
+            <p class="field-hint">Mention what you contribute to the team and what you like building.</p>
+            <div class="moodboard">
+              <span class="mood-item mood-item--image">++</span>
+              <a class="mood-item" href="https://github.com/" target="_blank" rel="noreferrer">GitHub</a>
+              <a class="mood-item" href="https://www.w3schools.com/html/" target="_blank" rel="noreferrer">HTML</a>
+              <span class="mood-item mood-item--note">Ship</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="mission" class="section section--split reveal">
+      <div class="section__heading">
+        <p class="eyebrow">Mission Statement</p>
+        <h2>How we work</h2>
+      </div>
+
+      <div class="mission-card">
+        <p class="mission-card__quote">
+          Our team combines curiosity, precision, and respect. We aim to build software that is useful, understandable, and shaped by strong collaboration.
+        </p>
+        <p class="mission-card__support">
+          We value clear communication, testing ideas early, and leaving every project better documented than we found it.
+        </p>
+      </div>
+    </section>
+
+    <section id="rules" class="section reveal">
+      <div class="section__heading">
+        <p class="eyebrow">Team Rules</p>
+        <h2>Shared expectations</h2>
+      </div>
+
+      <div class="rules-grid">
+        <div class="rule-item">Respond to messages and review requests within a reasonable time.</div>
+        <div class="rule-item">Split tasks fairly and keep commits small, clear, and meaningful.</div>
+        <div class="rule-item">Respect different ideas, then make decisions based on the project goals.</div>
+        <div class="rule-item">Document major changes so the next teammate can continue easily.</div>
+      </div>
+    </section>
+
+    <section id="contrib" class="section reveal">
+      <div class="section__heading">
+        <p class="eyebrow">Contributors</p>
+        <h2>Alpha team members</h2>
+      </div>
+
+      <div class="contributors">
+        <span>Ben Dodson</span>
+        <span>Allan Thavithith</span>
+        <span>Nimay Satishkumar</span>
+        <span>Mike Mallare</span>
+      </div>
+      <p class="contributors__note">Each member can upload a personal avatar and write an individual description directly in their own card.</p>
+    </section>
+  </main>
+
+  <footer class="footer reveal">
+    <p>Built with HTML, CSS, and JavaScript for the group bio project.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
